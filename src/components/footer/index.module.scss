@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.footer {
+  padding: 4rem 0;
+  .inner {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    color: rgb(139, 139, 139);
+    font-size: 0.875rem;
+    .icon,
+    a {
+      color: $primary;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

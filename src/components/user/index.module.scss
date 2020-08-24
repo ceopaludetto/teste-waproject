@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.user {
+  display: flex;
+  column-gap: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #fff;
+  grid-column: span 4;
+  border: 1px solid #ddd;
+  .avatar {
+    flex: 0 0 75px;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+  .info {
+    flex: 1;
+    a {
+      font-size: 1.25rem;
+      color: $primary;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .interactions {
+      color: rgb(139, 139, 139);
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      .icon {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+    .ids {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+      .id {
+        display: block;
+        font-size: 0.875rem;
+        margin: 0.4rem 0 0;
+        font-weight: 500;
+        & + .id {
+          border-left: 1px solid #ddd;
+          padding-left: 0.5rem;
+        }
+        span:not(.id) {
+          font-weight: 400;
+        }
+      }
+    }
+    .actions {
+      text-align: right;
+      margin-top: 1.15rem;
+    }
+  }
+}

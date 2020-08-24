@@ -1,0 +1,11 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  .no-data {
+    grid-column: span 12;
+    color: rgb(139, 139, 139);
+    font-size: 1rem;
+    text-align: center;
+  }
+}

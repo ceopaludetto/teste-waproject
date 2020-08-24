@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.button {
+  cursor: pointer;
+  border-radius: 6px;
+  border: 0;
+  padding: 0.7rem 1.15rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+  font-weight: 500;
+  transition: box-shadow 125ms ease-in-out, border-color 125ms ease-in-out, background-color 125ms ease-in-out;
+  &.contained {
+    background-color: $primary;
+    color: #fff;
+    &:hover {
+      background-color: lighten($primary, 5%);
+    }
+    &:focus,
+    &:active {
+      background-color: darken($primary, 5%);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($primary, 0.3);
+    }
+  }
+  &.flat {
+    background-color: transparent;
+    color: $primary;
+    &:hover {
+      background-color: rgba($primary, 0.1);
+    }
+    &:focus,
+    &:active {
+      outline: none;
+      background-color: rgba($primary, 0.2);
+      box-shadow: 0 0 0 3px rgba($primary, 0.1);
+    }
+  }
+  &:not(.small) {
+    padding: 0.7rem 1.15rem;
+  }
+  &.small {
+    padding: 0.3rem 0.7rem;
+  }
+}

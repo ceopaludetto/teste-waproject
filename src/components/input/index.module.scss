@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.input {
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  padding: 0.65rem;
+  border: 1px solid #ddd;
+  transition: box-shadow 125ms ease-in-out, border-color 125ms ease-in-out;
+  font-size: 1rem;
+  &:focus,
+  &:active {
+    border-color: $primary;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary, 0.3);
+  }
+}
