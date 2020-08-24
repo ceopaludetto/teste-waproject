@@ -5,7 +5,7 @@ Para inicializar é necessário ter o `node` instalado.
 ### Desenvolvimento
 
 - Instale as dependências rodando `yarn` ou `npm i`;
-- Caso queira evitar o problema de [rate limit](https://docs.github.com/en/rest/reference/rate-limit), configure o `.env` a partir do `.env.example`; [Entenda o motivo](#por-que-uma-chave-de-api-do-github)
+- Caso queira evitar o problema de [rate limit](https://docs.github.com/en/rest/reference/rate-limit), configure o `.env` a partir do `.env.example`;
 - Execute `yarn start` ou `npm run start`.
 
 ### Build
